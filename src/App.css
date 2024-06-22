@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+
+body {
+  background-color: #235A32;
+  margin: 0;
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 1px;
+  color: rgb(233, 238, 221);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.uploadedImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.img {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #5A4E23;
+  box-shadow: 0px 2px 4px #5A4E23;
+}
+
+.downloadbtn {
+  background-image: linear-gradient(
+    to right,
+    #5A4E23 0%,
+    #5e4901 51%,
+#5A4E23 100%
+  );
+
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 2px #eee;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.downloadbtn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btnList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px  ;
+  background-color: rgb(243, 225, 225);
+}
+
+.filterBtn {
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding: 10px;
+
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  
+  background-image: linear-gradient(
+    to right,
+    #0c142c 0%,
+    #000a2c 51%,
+    #0c142c 100%
+  );
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 1px #eee;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.filterBtn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.Vintage {
+  filter: sepia(30%) contrast(110%) brightness(95%);
+}
+
+.Monochrome {
+  filter: grayscale(100%) contrast(150%) brightness(90%);
+}
+
+.PopArt {
+  filter: saturate(200%) contrast(130%);
+}
+
+.Glow {
+  filter: brightness(110%) blur(3px);
+}
+
+.Noir {
+  filter: grayscale(100%) contrast(150%) brightness(80%) sepia(20%);
+}
+
+.Underwater {
+  filter: saturate(50%) brightness(120%) contrast(110%) hue-rotate(180deg);
+}
+
+.NightVision {
+  filter: grayscale(100%) contrast(150%) brightness(150%) hue-rotate(-90deg)
+    saturate(0%);
+}
+
+.DramaticRed {
+  filter: grayscale(100%) contrast(150%) brightness(80%) sepia(10%)
+    hue-rotate(-60deg);
+}
+
+.Greenery {
+  filter: saturate(150%) hue-rotate(90deg) brightness(105%);
+}
+
+.Sunset {
+  filter: contrast(90%) brightness(110%) sepia(20%) hue-rotate(-10deg);
+}
+
+.WarmGlow {
+  filter: contrast(90%) brightness(120%) sepia(10%) hue-rotate(30deg);
+}
+
+.OldPaper {
+  filter: sepia(50%) contrast(90%) brightness(100%) saturate(75%);
+}
+
+.Nostalgia {
+  filter: sepia(20%) contrast(100%) brightness(100%);
+}
+
+.MuchColor {
+  filter: saturate(200%) contrast(120%);
+}
+
+.Negative {
+  filter: invert(100%);
+}
+
+.RedToBlue {
+  filter: hue-rotate(180deg);
+}
+
+.Sepia {
+  filter: sepia(100%);
+}
+
+.Duotone {
+  filter: grayscale(100%) contrast(120%) brightness(95%) sepia(10%)
+    hue-rotate(10deg);
+}
+
+.Valencia {
+  filter: sepia(20%) contrast(110%) brightness(100%) saturate(110%);
+}
+
+.Clarendon {
+  filter: contrast(120%) brightness(120%) hue-rotate(-10deg) saturate(110%);
+}
+
+.Lark {
+  filter: contrast(130%) brightness(110%) saturate(90%) hue-rotate(-10deg);
+}
+
+.Gingham {
+  filter: contrast(105%) brightness(105%) hue-rotate(0deg) saturate(100%)
+    sepia(20%);
+}
+
+.BnW {
+  filter: grayscale(100%);
+}
+
+.HighBnW {
+  filter: grayscale(100%) brightness(110%) contrast(150%);
+}
+
+
+@media (max-width: 580px){
+
+.container{
+    font-size: 0.7rem;
+    
+  
+}
+    .menu{
+        display: none;
+    }
+
+    .uploadedImg{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 377px){
+    .container{
+        font-size: 0.5rem;
+        
+      
+    }
+
+
+}
